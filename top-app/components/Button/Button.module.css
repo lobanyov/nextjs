@@ -32,3 +32,19 @@
 .ghost:hover {
   background-color: var(--ghost-hover);
 }
+
+.right, .down {
+  margin: 0 5px;
+}
+
+.primary .right, .primary .down {
+  fill: var(--white);
+}
+
+.ghost .right, .ghost .down {
+  fill: var(--black);
+}
+
+.down {
+  transform: rotate(90deg);
+}
