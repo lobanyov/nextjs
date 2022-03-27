@@ -3,6 +3,7 @@ import styles from './Button.module.css';
 
 import ArrowSvg from '../../assets/arrow.svg';
 import { appearances, arrowDirections } from './configs';
+import { isEqual } from '../../utilities';
 
 import cn from 'classnames';
 
@@ -19,8 +20,8 @@ export const Button = (
       cn(
         styles.button,
         {
-          [styles.primary]: appearance === appearances.primary,
-          [styles.ghost]: appearance === appearances.ghost,
+          [styles.primary]: isEqual(appearance, appearances.primary),
+          [styles.ghost]: isEqual(appearance, appearances.ghost),
         },
       )
     }>
@@ -31,8 +32,8 @@ export const Button = (
         && <ArrowSvg className={
             cn(
               {
-                [styles.down]: arrowDirection === arrowDirections.down,
-                [styles.right]: arrowDirection === arrowDirections.right,
+                [styles.down]: isEqual(arrowDirection, arrowDirections.down),
+                [styles.right]: isEqual(arrowDirection, arrowDirections.right),
               }
             )
           }/>
