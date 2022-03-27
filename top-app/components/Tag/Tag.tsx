@@ -1,9 +1,10 @@
 import { TagProps } from './Tag.props';
-import cn from 'classnames';
+import styles from './Tag.module.css';
 
 import { tagColors, tagSizes } from './configs';
-import styles from './Tag.module.css';
 import { isEqual } from '../../utilities';
+
+import cn from 'classnames';
 
 export const Tag = ({ children: text, className, color, href, size = 'M', ...props }: TagProps): JSX.Element => {
   return <div className={
