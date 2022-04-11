@@ -1,7 +1,7 @@
 import { HeadingProps } from './Heading.props';
-import { headingLevels } from './configs';
-
 import styles from './Heading.module.css';
+
+import { headingLevels } from './configs';
 
 export const Heading = ({ children, level }: HeadingProps): JSX.Element => {
   switch (level) {

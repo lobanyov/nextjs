@@ -1,8 +1,8 @@
 import { ButtonProps } from './Button.props';
 import styles from './Button.module.css';
 
-import ArrowSvg from '../../assets/arrow.svg';
 import { appearances, arrowDirections } from './configs';
+import ArrowSvg from '../../assets/arrow.svg';
 import { isEqual } from '../../utilities';
 
 import cn from 'classnames';

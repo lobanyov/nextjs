@@ -1,4 +1,4 @@
-import { Button, Heading, Paragraph, Tag } from '../components';
+import { Button, Heading, Paragraph, Tag, Rating } from '../components';
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolores iure quis consequatur! Eveniet nihil, vitae quas ratione quae commodi asperiores modi similique, ipsa perferendis sapiente, magnam harum facilis. Qui.
       </Paragraph>
       <Tag color='gray' href='#'>Some tag text</Tag>
+      <Rating number={2}/>
     </>
   );
 }

@@ -1,0 +1,15 @@
+.star {
+  margin-right: 5px;
+}
+
+.star:hover {
+  cursor: pointer;
+}
+
+.star:last-child {
+  margin-right: 0;
+}
+
+.primary {
+  fill: var(--primary);
+}

@@ -1,8 +1,9 @@
 import { ParagraphProps } from './Paragraph.props';
+import styles from './Paragraph.module.css';
+
 import cn from 'classnames';
 
 import { paragraphSizes } from './configs';
-import styles from './Paragraph.module.css';
 import { isEqual } from '../../utilities';
 
 export const Paragraph = ({ children: text, size }: ParagraphProps): JSX.Element => {
